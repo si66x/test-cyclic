@@ -3,7 +3,6 @@ const app = express();
 const cors = require("cors");
 
 app.use(cors());
-
 app.use(express.static("dist"));
 
 let notes = [
@@ -24,7 +23,7 @@ let notes = [
   },
 ];
 
-app.get("/api/persons", (req, res) => {
+app.get("/api/notes", (req, res) => {
   res.json(notes);
 });
 
