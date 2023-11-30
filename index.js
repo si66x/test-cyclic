@@ -48,6 +48,12 @@ app.post("/api/notes", (request, response) => {
   response.json(note);
 });
 
+app.post("/", (request, response) => {
+  const note = request.body;
+  console.log("kocak");
+  response.json(note);
+});
+
 app.get("/api/notes", (request, response) => {
   response.json(notes);
 });
